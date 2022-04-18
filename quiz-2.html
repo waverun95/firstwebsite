@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>연습문제 2</title>
-  <style>
-    table, td, th {
-      border:1px solid #ccc;
-    }
-    td, th {
-      padding:10px 20px;
-    }
-    td:last-child{
-      width:200px;
-    }
-  </style>
-</head>
-<body>
-  <h1>수습 국원 지원 양식</h1>
-  <table>
-  <tr>
-    <th rowspan="3">개인정보</th>
-    <td>이름</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>학과/학번</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>연락처</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <th>지원 분야</th>
-    <td colspan="2"></td>
-  </tr>
-</table>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>연습문제 2</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+    </style>
+  </head>
+  <body>
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서 </h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<h4>개인정보</h4>
+				<ul>
+					<li>
+				<label for="name">이름</label>
+				<input type="text" id="name"autofocus placeholder="공백없이 입력">
+				</li>
+				<li>
+				<label for="phone">연락처</label>
+				<input type="tel" id="phone">
+					</li>
+				</ul>
+				<h4>지원분야</h4>
+				<ul>
+					<li>
+					<input type="radio" name="o" checked>
+					<label> 웹 퍼블리싱</label>
+				</li>
+				<li>
+					<input type="radio" name="o">
+					<label> 웹 어플리케이션 개발</label>
+				</li>
+				<li>
+					<input type="radio" name="o">
+					<label> 개발 환경 개선</label>
+				</li>
+				</ul>
+				<label>
+				<h4>지원 동기</h4>
+				<textarea name="" id="" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요" ></textarea>
+				
+				</label>
+				<div>
+				<input type="submit" value="접수하기">
+				<input type="reset" value="다시 쓰기">
+				</div>
+			</form>
+		</div>
+  </body>
 </html>
-
