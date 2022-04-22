@@ -1,60 +1,33 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>연습문제 2</title>  
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    .top-menu {
-      margin:50px auto;
-      padding:0;
-      list-style:none;
-      width:605px;
-      height:35px;
-      box-shadow:0 3px 4px #8b8b8b;
-      background-color:#dadada;
-    }
-    .top-menu li {
-      float:left;
-      border-right:1px solid #929292;
-    }
-    .top-menu li a:link{
-      color:black;
-      text-decoration:none;
-      text-align:center;
-      display:block;
-      width:100px;
-      height:35px;
-      line-height: 35px;
-    }
-    .top-menu li a:visited {
-      color:black;
-    } 
-   .top-menu li:last-child{
-     border: none;
-   }
-   .top-menu li:not(:last-child) a:hover{
-    background-color:#555;
-      color:#fff;
-   }
-   .top-menu li:last-child a:hover{
-    background-color:#b30000;
-      color:#fff;
-   }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+	<style>
+		body {
+			font-size:1.2em;
+			text-align:center;
+		}
+	</style>
 </head>
 <body>
-  <nav>
-    <ul class="top-menu">
-      <li><a href="#">메뉴1</a></li>
-      <li><a href="#">메뉴2</a></li>
-      <li><a href="#">메뉴3</a></li>
-      <li><a href="#">메뉴4</a></li>
-      <li><a href="#">메뉴5</a></li>
-      <li><a href="#">메뉴6</a></li>
-    </ul>
-   </nav>
+	<h2>3의 배수 찾기</h2>
+	<script>
+	var i;
+	var userNumber = parseInt(prompt("몇 까지 3의 배수를 찾을까요?","100"));
+	var count = 0;
+	
+	if (userNumber !== null){
+		for(i = 1; i < userNumber; i++) {
+			if( i % 3 === 0) {
+				count++;
+				document.write(i + ",");
+			}
+		}
+		document.write("<p>" + userNumber + "까지 3의 배수의 갯수 : " + count + "</p>");
+	}
+	</script>
+
 </body>
 </html>

@@ -1,23 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>연습문제 1</title>  
-  <style>
-    img {
-      margin-right:50px;
-      border:1px solid #ccc;
-      box-shadow: 2px 2px 5px #ccc;
-    }
-    img:first-of-type{
-      border: red solid 2px;
-      
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 1</title>
 </head>
 <body>
-  <img src="images/1.jpg" alt="">
-  <img src="images/2.jpg" alt="">
-  <img src="images/3.jpg" alt="">
+	<h2>4의 배수일까 아닐까</h2>
+
+	<script>
+	var userNumber = prompt("숫자를 입력하세요");
+	 
+	if(userNumber % 4 === 0 )
+		alert("4의 배수입니다");
+	else
+		alert("4의 배수가 아닙니다")
+	</script>
 </body>
 </html>
